@@ -1,0 +1,267 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+
+{% if section.settings.image_shape == 'blob' %}
+  {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- unless section.settings.quick_add == 'none' -%}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
+{%- if section.settings.quick_add == 'standard' -%}
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- if section.settings.quick_add == 'bulk' -%}
+  <script src="{{ 'quick-add-bulk.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+  
+{% assign coleccion_blocks = section.blocks | where: "type", "coleccion" %}
+
+<div class="w-full py-16 md:py-32 px-6 flex flex-col gap-10 container mx-auto" data-section-id="{{ section.id }}">
+  <h2 class="font-bold text-4xl md:text-5xl">       {{ section.settings.titulo }}</h2>
+
+  {% if coleccion_blocks.size > 1 %}
+    <div class="grid grid-cols-5 gap-5 w-full max-w-[900px]">
+      {% for block in coleccion_blocks %}
+        <p class="text-center py-2 w-full rounded-full font-semibold cursor-pointer activate-section text-[#484848] bg-[#F3F1F1]"
+           data-index="{{ forloop.index0 }}" data-section-id="{{ section.id }}">
+          {{ block.settings.text }}
+        </p>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% for block in coleccion_blocks %}
+    <div class="w-full swiper pb-20 slider-productos {% unless coleccion_blocks.size == 1 and forloop.index0 == 0 %}hidden{% endunless %}"
+         data-index="{{ forloop.index0 }}" data-section-id="{{ section.id }}">
+      <div class="swiper-wrapper">
+        {% for product in block.settings.collection.products limit:6 %}
+          <div class="swiper-slide">
+            {% render 'card-product',
+              card_product: product,
+              media_aspect_ratio: section.settings.image_ratio,
+              image_shape: section.settings.image_shape,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              skip_styles: false,
+              section_id: section.id,
+              quick_add: section.settings.quick_add
+            %}
+          </div>
+        {% endfor %}
+      </div>
+
+         <div class="swiper-pagination"></div>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('[data-section-id]').forEach(section => {
+      const sectionId = section.getAttribute('data-section-id');
+      const buttons = section.querySelectorAll(`.activate-section[data-section-id="${sectionId}"]`);
+      const sliders = section.querySelectorAll(`.slider-productos[data-section-id="${sectionId}"]`);
+
+      buttons.forEach(button => {
+        button.addEventListener("click", function () {
+          const index = this.getAttribute("data-index");
+
+          buttons.forEach(btn => {
+            btn.classList.remove("bg-[#0E3254]", "text-white");
+            btn.classList.add("text-[#484848]", "bg-[#F3F1F1]");
+          });
+
+          this.classList.add("bg-[#0E3254]", "text-white");
+          this.classList.remove("text-[#484848]", "bg-[#F3F1F1]");
+
+          sliders.forEach(slider => {
+            if (slider.getAttribute("data-index") === index) {
+              slider.classList.remove("hidden");
+            } else {
+              slider.classList.add("hidden");
+            }
+          });
+        });
+      });
+
+      // Activar primero al cargar
+if (buttons.length > 1 && sliders.length > 0) {
+  buttons[0].classList.add("bg-[#0E3254]", "text-white");
+  buttons[0].classList.remove("text-[#484848]", "bg-[#F3F1F1]");
+  sliders[0].classList.remove("hidden");
+}
+
+    });
+  });
+</script>
+
+<style>
+           .slider-productos  .swiper-pagination-bullet{
+                border-radius: 4px;
+                width: 10px;
+                background: #1F140F ;
+            }
+           .slider-productos  .swiper-pagination-bullet-active{
+                width: 20px;
+                border-radius: none;
+                transition: all .5s ease-in-out;
+            }
+        </style>
+{% schema %}
+    {
+      "name": "tabs-product",
+      "class": "tabs-product",
+      "disabled_on": {
+        "groups": ["header", "footer"]
+      },
+      "settings": [
+           {
+      "type": "text",
+      "id": "titulo",
+                "default": "Camisas",
+      "label": "Titulo"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.featured-collection.settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.featured-collection.settings.image_ratio.label"
+    },
+    {
+      "type": "select",
+      "id": "image_shape",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.image_shape.options__1.label"
+        },
+        {
+          "value": "arch",
+          "label": "t:sections.all.image_shape.options__2.label"
+        },
+        {
+          "value": "blob",
+          "label": "t:sections.all.image_shape.options__3.label"
+        },
+        {
+          "value": "chevronleft",
+          "label": "t:sections.all.image_shape.options__4.label"
+        },
+        {
+          "value": "chevronright",
+          "label": "t:sections.all.image_shape.options__5.label"
+        },
+        {
+          "value": "diamond",
+          "label": "t:sections.all.image_shape.options__6.label"
+        },
+        {
+          "value": "parallelogram",
+          "label": "t:sections.all.image_shape.options__7.label"
+        },
+        {
+          "value": "round",
+          "label": "t:sections.all.image_shape.options__8.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.all.image_shape.label",
+      "info": "t:sections.all.image_shape.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_rating.label",
+      "info": "t:sections.featured-collection.settings.show_rating.info"
+    },
+    {
+      "type": "select",
+      "id": "quick_add",
+      "default": "none",
+      "label": "t:sections.main-collection-product-grid.settings.quick_add.label",
+      "info": "t:sections.main-collection-product-grid.settings.quick_add.info",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_1"
+        },
+        {
+          "value": "standard",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_2"
+        },
+        {
+          "value": "bulk",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
+        }
+      ]
+    }
+    
+      ],
+      "blocks": [
+        {
+          "type": "coleccion",
+          "name": "coleccion",
+          "settings": [
+            {
+              "type": "text",
+              "id": "text",
+              "label": "Text",
+              "default": "PARA ÉL"
+            },{
+              "type": "collection",
+              "id": "collection",
+              "label": "Collection"
+            }
+
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "tabs-product"
+        }
+      ]
+    }
+    {% endschema %}
+
+

@@ -1,0 +1,127 @@
+<div class="w-full h-auto relative overflow-hidden">
+  <div class="swiper w-full banner-slider">
+    <div class="swiper-wrapper">
+
+      {% for block in section.blocks %}
+      
+            <div class="swiper-slide relative w-full h-auto">
+                <a href=" {{
+              block.settings.url}}">
+          {% if block.settings.video != blank %}
+            {{
+              block.settings.video
+              | video_tag:
+                autoplay: true,
+                loop: true,
+                muted: true,
+                controls: false,
+                preload: 'metadata',
+                loading: 'lazy',
+                class: 'hidden md:block w-full h-auto '
+            }}
+            {{
+              block.settings.video2
+              | video_tag:
+                autoplay: true,
+                loop: true,
+                muted: true,
+                controls: false,
+                preload: 'metadata',
+                loading: 'lazy',
+                class: 'md:hidden block w-full  h-auto '
+            }}
+          {% elsif block.settings.img != blank %}
+            {{
+              block.settings.img
+              | image_url: width: 2040
+              | image_tag:
+                loading: 'lazy',
+                class: 'hidden md:block w-full h-auto',
+                widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
+            }}
+            {{
+              block.settings.img2
+              | image_url: width: 2040
+              | image_tag:
+                loading: 'lazy',
+                class: 'md:hidden block w-full h-auto',
+                widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
+            }}
+          {% endif %}
+            </a>
+        </div>
+    
+      {% endfor %}
+
+    </div>
+
+    <!-- Navegación y Paginación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+     <style>
+           .banner-slider .swiper-pagination-bullet{
+                border-radius: 4px;
+                width: 10px;
+                background: white ;
+            }
+           .banner-slider .swiper-pagination-bullet-active{
+                width: 20px;
+                border-radius: none;
+                transition: all .5s ease-in-out;
+            }
+        </style>
+
+
+{% schema %}
+  {
+    "name": "Banner Slider",
+    "class": "Banner Slider",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Imagen Computadora",
+            "info": "1900 px X 750px"
+          },
+          {
+            "type": "image_picker",
+            "id": "img2",
+            "label": "Imagen Móvil",
+            "info": "1080px X 1400px"
+          },
+          {
+            "type": "video",
+            "id": "video",
+            "label": "Video Computadora"
+          },
+          {
+            "type": "video",
+            "id": "video2",
+            "label": "Video Móvil"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "url"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Banner Slider",
+        "category": "Banners"
+      }
+    ]
+  }
+  {% endschema %}
+  
