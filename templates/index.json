@@ -264,7 +264,7 @@
       "name": "reviews",
       "settings": {
         "titulo": "REVIEWS",
-        "url": "",
+        "url": "shopify://pages/reviews",
         "textUrl": "VER MÁS REVIEWS"
       }
     },
