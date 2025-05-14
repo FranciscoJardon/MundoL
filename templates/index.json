@@ -1,1 +1,121 @@
-{"sections":{"banner_slider_kKmhUa":{"type":"banner-slider","blocks":{"slide_YJQiBN":{"type":"slide","settings":{"img":"shopify:\/\/shop_images\/Frame_494_2.png","img2":"shopify:\/\/shop_images\/Frame_495.png","url":""}},"slide_DPw6QL":{"type":"slide","settings":{"img":"shopify:\/\/shop_images\/Frame_494_3.png","img2":"shopify:\/\/shop_images\/Frame_2.png","url":""}}},"block_order":["slide_YJQiBN","slide_DPw6QL"],"name":"Banner Slider","settings":{}},"banner_slider_BhG9VH":{"type":"banner-slider","blocks":{"slide_4qcAFn":{"type":"slide","settings":{"img":"shopify:\/\/shop_images\/Group_205.png","img2":"shopify:\/\/shop_images\/Group_203.png","url":""}}},"block_order":["slide_4qcAFn"],"name":"Banner Slider","settings":{}},"tabs_products_q7KcTV":{"type":"tabs-products","blocks":{"coleccion_qpqWVw":{"type":"coleccion","settings":{"text":"Best Sellers","collection":"best-seller"}},"coleccion_ftPjUi":{"type":"coleccion","settings":{"text":"Lisas","collection":"camisas-lisas"}},"coleccion_zqpHgY":{"type":"coleccion","disabled":true,"settings":{"text":"Estampadas","collection":""}},"coleccion_yMXRem":{"type":"coleccion","settings":{"text":"Rayas","collection":"camisas-rayas"}},"coleccion_iALYVj":{"type":"coleccion","settings":{"text":"Cuadros","collection":"camisas-cuadros"}}},"block_order":["coleccion_qpqWVw","coleccion_ftPjUi","coleccion_zqpHgY","coleccion_yMXRem","coleccion_iALYVj"],"name":"tabs-product","settings":{"titulo":"CAMISAS","image_ratio":"adapt","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"standard"}}},"order":["banner_slider_kKmhUa","banner_slider_BhG9VH","tabs_products_q7KcTV"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner_slider_kKmhUa": {
+      "type": "banner-slider",
+      "blocks": {
+        "slide_YJQiBN": {
+          "type": "slide",
+          "settings": {
+            "img": "shopify://shop_images/Frame_494_2.png",
+            "img2": "shopify://shop_images/Frame_495.png",
+            "url": "shopify://collections"
+          }
+        },
+        "slide_DPw6QL": {
+          "type": "slide",
+          "settings": {
+            "img": "shopify://shop_images/Frame_494_3.png",
+            "img2": "shopify://shop_images/Frame_2.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_YJQiBN",
+        "slide_DPw6QL"
+      ],
+      "name": "Banner Slider",
+      "settings": {}
+    },
+    "banner_slider_BhG9VH": {
+      "type": "banner-slider",
+      "blocks": {
+        "slide_4qcAFn": {
+          "type": "slide",
+          "settings": {
+            "img": "shopify://shop_images/Group_205.png",
+            "img2": "shopify://shop_images/Group_203.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_4qcAFn"
+      ],
+      "name": "Banner Slider",
+      "settings": {}
+    },
+    "tabs_products_q7KcTV": {
+      "type": "tabs-products",
+      "blocks": {
+        "coleccion_qpqWVw": {
+          "type": "coleccion",
+          "settings": {
+            "text": "Best Sellers",
+            "collection": "best-seller"
+          }
+        },
+        "coleccion_ftPjUi": {
+          "type": "coleccion",
+          "settings": {
+            "text": "Lisas",
+            "collection": "camisas-lisas"
+          }
+        },
+        "coleccion_zqpHgY": {
+          "type": "coleccion",
+          "disabled": true,
+          "settings": {
+            "text": "Estampadas",
+            "collection": ""
+          }
+        },
+        "coleccion_yMXRem": {
+          "type": "coleccion",
+          "settings": {
+            "text": "Rayas",
+            "collection": "camisas-rayas"
+          }
+        },
+        "coleccion_iALYVj": {
+          "type": "coleccion",
+          "settings": {
+            "text": "Cuadros",
+            "collection": "camisas-cuadros"
+          }
+        }
+      },
+      "block_order": [
+        "coleccion_qpqWVw",
+        "coleccion_ftPjUi",
+        "coleccion_zqpHgY",
+        "coleccion_yMXRem",
+        "coleccion_iALYVj"
+      ],
+      "name": "tabs-product",
+      "settings": {
+        "titulo": "CAMISAS",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard"
+      }
+    }
+  },
+  "order": [
+    "banner_slider_kKmhUa",
+    "banner_slider_BhG9VH",
+    "tabs_products_q7KcTV"
+  ]
+}
