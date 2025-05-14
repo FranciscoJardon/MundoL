@@ -51,7 +51,7 @@
             "tab-2": "Fit",
             "tab-3": "Cuidados",
             "tab-1-content": "{{ product.description }}",
-            "tab-2-content": "",
+            "tab-2-content": "<p>**FAVOR DE REVISAR LA GUIA DE TALLAS**</p><ul><li><br/>NUESTRAS CAMISAS VIENEN UN POCO REDUCIDA, RECOMENDAMOS UNA TALLA MAS A LA QUE NORMALMENTE USAN.<br/></li></ul>",
             "tab-3-content": ""
           }
         }
