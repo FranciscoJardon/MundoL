@@ -30,6 +30,10 @@
           "type": "price",
           "settings": {}
         },
+        "oferta_AHTi6P": {
+          "type": "oferta",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -70,6 +74,7 @@
         "revie_reviews_por_whatsapp_app_block_zGFfJz",
         "title",
         "price",
+        "oferta_AHTi6P",
         "variant_picker",
         "buy_buttons",
         "payments_jaM66E",
