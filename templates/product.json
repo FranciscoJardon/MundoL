@@ -12,13 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -34,25 +27,43 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
+        },
+        "payments_jaM66E": {
+          "type": "payments",
+          "settings": {
+            "text-payments": "Metodos de pago"
+          }
+        },
+        "delivery_estimated_3TeDJa": {
+          "type": "delivery-estimated",
+          "settings": {}
+        },
+        "tab_G9HARF": {
+          "type": "tab",
+          "settings": {
+            "tab-1": "Descripción",
+            "tab-2": "Fit",
+            "tab-3": "Cuidados",
+            "tab-1-content": "{{ product.description }}",
+            "tab-2-content": "",
+            "tab-3-content": ""
+          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
         "variant_picker",
-        "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "payments_jaM66E",
+        "delivery_estimated_3TeDJa",
+        "tab_G9HARF"
       ],
       "settings": {
         "enable_sticky_info": true,
