@@ -112,6 +112,15 @@
         "quick_add": "standard"
       }
     },
+    "diseno_comodidad_Cw4zeB": {
+      "type": "diseno-comodidad",
+      "name": "diseno-comodidad",
+      "settings": {
+        "titulo": "DISEÑO + COMODIDAD",
+        "url": "shopify://collections",
+        "textUrl": "VER MÁS"
+      }
+    },
     "guia_talla_mY4nBk": {
       "type": "guia-talla",
       "name": "guia-talla",
@@ -273,6 +282,7 @@
     "banner_slider_kKmhUa",
     "banner_slider_BhG9VH",
     "tabs_products_q7KcTV",
+    "diseno_comodidad_Cw4zeB",
     "guia_talla_mY4nBk",
     "ele_competencia_giJtzE",
     "tabs_products_Kcqyfy",
