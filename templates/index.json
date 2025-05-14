@@ -233,6 +233,13 @@
             "text": "Me gustó el producto solo que no fue de mi talla deseo saber el proceso de devolución para pedir una talla más grande"
           }
         },
+        "reviews_ckTWkq": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Jaqueline Lopez",
+            "text": "Recomiendo esta pieza pues es de acuerdo a mi talla y buen materiales"
+          }
+        },
         "reviews_HGfcGt": {
           "type": "reviews",
           "settings": {
@@ -267,23 +274,16 @@
             "titulo": "Juan Martin",
             "text": "Excelente muy recomendable 🙂👌"
           }
-        },
-        "reviews_ckTWkq": {
-          "type": "reviews",
-          "settings": {
-            "titulo": "Jaqueline Lopez",
-            "text": "Recomiendo esta pieza pues es de acuerdo a mi talla y buen materiales"
-          }
         }
       },
       "block_order": [
         "reviews_f8XHmB",
+        "reviews_ckTWkq",
         "reviews_HGfcGt",
         "reviews_FLRMkW",
         "reviews_tJY3Pn",
         "reviews_LbVQRM",
-        "reviews_FjtTAD",
-        "reviews_ckTWkq"
+        "reviews_FjtTAD"
       ],
       "name": "reviews",
       "settings": {
