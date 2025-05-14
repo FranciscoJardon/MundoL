@@ -73,13 +73,82 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "columns",
-        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "reviews_h6TF9J": {
+      "type": "reviews",
+      "blocks": {
+        "reviews_XnpP48": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Héctor",
+            "text": "Me gustó el producto solo que no fue de mi talla deseo saber el proceso de devolución para pedir una talla más grande"
+          }
+        },
+        "reviews_findQM": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Jaqueline Lopez",
+            "text": "Recomiendo esta pieza pues es de acuerdo a mi talla y buen materiales"
+          }
+        },
+        "reviews_xRempq": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Erick",
+            "text": "Excelente producto y logística! 100% lo recomiendo"
+          }
+        },
+        "reviews_D8pi4r": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Williams Martinez",
+            "text": "Excelente producto 100% recomendable ocupo realizar otra compra."
+          }
+        },
+        "reviews_FhYNXB": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Eric Gerardo ",
+            "text": "Excelentes camisas. Llegaron en tiempo. Buena calidad"
+          }
+        },
+        "reviews_4TepfC": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "JULIAN ADAN",
+            "text": "100% recomendado y volvería a comprar"
+          }
+        },
+        "reviews_wdxVEA": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Juan Martin",
+            "text": "Excelente muy recomendable 🙂👌"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_XnpP48",
+        "reviews_findQM",
+        "reviews_xRempq",
+        "reviews_D8pi4r",
+        "reviews_FhYNXB",
+        "reviews_4TepfC",
+        "reviews_wdxVEA"
+      ],
+      "name": "reviews",
+      "settings": {
+        "titulo": "REVIEWS",
+        "url": "shopify://pages/reviews",
+        "textUrl": "VER MÁS REVIEWS"
       }
     },
     "related-products": {
@@ -104,6 +173,7 @@
   },
   "order": [
     "main",
+    "reviews_h6TF9J",
     "related-products"
   ]
 }
