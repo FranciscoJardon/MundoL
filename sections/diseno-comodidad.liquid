@@ -1,0 +1,99 @@
+
+
+<div class="bg-[#E2E7EC] py-16 md:py-32">
+  <div class="container mx-auto flex flex-col   gap-8 md:gap-16">
+
+    <div class="flex items-center gap-5 px-6 md:px-0">
+        <p class="mt-5">ESTO ES</p>
+        <img class="w-[50px]" src="https://cdn.shopify.com/s/files/1/0618/8836/4797/files/Vector_5.svg?v=1747240549" alt="">
+    </div>
+
+    <h2 class="text-3xl md:text-5xl  text-azul mt-6 px-6 md:px-0  ">{{ section.settings.titulo }}</h2>
+
+
+
+    <div class="swiper w-full banner-slider">
+    <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+            <div class="swiper-slide">
+            {{
+              block.settings.img
+              | image_url: width: 2040
+              | image_tag:
+                loading: 'lazy',
+                class: 'hidden md:block w-full h-auto',
+                widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
+            }}
+            {{
+              block.settings.img2
+              | image_url: width: 2040
+              | image_tag:
+                loading: 'lazy',
+                class: 'md:hidden block w-full h-auto',
+                widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
+            }}
+
+
+            </div>
+        {% endfor %}
+    </div>
+</div>
+         <a href="{{ section.settings.url }}" class="bg-[#0E3254] text-2xl text-white py-4 px-16 rounded-full hover:bg-[#0e3254f6] transition duration-300 ease-in-out self-center">{{ section.settings.textUrl }}</a>
+
+
+</div>
+
+</div>
+
+
+{% schema %}
+    {
+      "name": "diseno-comodidad",
+      "class": "diseno-comodidad",
+      "settings": [
+        {
+              "type": "text",
+              "id": "titulo",
+              "label": "Título",
+              "default": "DISEÑO + COMODIDAD"
+           
+            },{
+              "type": "url",
+              "id": "url",
+              "label": "Url"
+            },{
+              "type": "text",
+              "id": "textUrl",
+              "label": "textUrl",
+              "default": "VER MÁS"
+           
+            }
+        
+        ],"blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Imagen Computadora",
+            "info": "1900 px X 750px"
+          },
+          {
+            "type": "image_picker",
+            "id": "img2",
+            "label": "Imagen Móvil",
+            "info": "1080px X 1400px"
+          }
+        ]
+      }
+    ],
+      "presets": [
+        {
+          "name": "diseno-comodidad",
+          "category": "Desarrollo"
+        }
+      ]
+    }
+{% endschema %}

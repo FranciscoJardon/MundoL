@@ -1,0 +1,66 @@
+<div class="py-16 md:py-32 md:px-6 px-0">
+       <p class="mt-5">ESTO ES</p>
+       <h2 class="text-3xl md:text-5xl  text-azul mt-6 px-6 md:px-0  ">{{ section.settings.titulo }}</h2>
+
+         {% for block in section.blocks %}
+
+
+        {% endfor %}
+
+
+</div>
+
+
+
+
+{% schema %}
+    {
+      "name": "para-ti",
+      "class": "para-ti",
+      "settings": [
+        {
+              "type": "text",
+              "id": "titulo",
+              "label": "Título",
+              "default": "DISEÑO + COMODIDAD"
+           
+            },{
+              "type": "url",
+              "id": "url",
+              "label": "Url"
+            },{
+              "type": "text",
+              "id": "textUrl",
+              "label": "textUrl",
+              "default": "VER MÁS"
+           
+            }
+        
+        ],"blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Imagen Computadora",
+            "info": "1900 px X 750px"
+          },
+          {
+            "type": "image_picker",
+            "id": "img2",
+            "label": "Imagen Móvil",
+            "info": "1080px X 1400px"
+          }
+        ]
+      }
+    ],
+      "presets": [
+        {
+          "name": "para-ti",
+          "category": "Desarrollo"
+        }
+      ]
+    }
+{% endschema %}
