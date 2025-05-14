@@ -123,6 +123,16 @@
         "textUrl": "GUÍA DE TALLAS"
       }
     },
+    "ele_competencia_giJtzE": {
+      "type": "ele-competencia",
+      "name": "ele-competencia",
+      "settings": {
+        "img": "shopify://shop_images/Captura_de_pantalla_2025-05-06_a_la_s_4.48.16_p.m._1.png",
+        "img2": "shopify://shop_images/Vector.svg",
+        "titulo": "VS. LA COMPETENCIA",
+        "subtitulo": "Nuestros cortes están diseñados desde cero para ajustarse correctamente y brindar libertad de movimiento."
+      }
+    },
     "tabs_products_Kcqyfy": {
       "type": "tabs-products",
       "blocks": {
@@ -148,28 +158,35 @@
         "quick_add": "standard"
       }
     },
-    "ele_competencia_giJtzE": {
-      "type": "ele-competencia",
-      "name": "ele-competencia",
-      "settings": {
-        "img": "shopify://shop_images/Captura_de_pantalla_2025-05-06_a_la_s_4.48.16_p.m._1.png",
-        "img2": "shopify://shop_images/Vector.svg",
-        "titulo": "VS. LA COMPETENCIA",
-        "subtitulo": "Nuestros cortes están diseñados desde cero para ajustarse correctamente y brindar libertad de movimiento."
-      }
-    },
     "ele_compromiso_P3WgRV": {
       "type": "ele-compromiso",
       "blocks": {
         "icono_nPWHmd": {
           "type": "icono",
           "settings": {
+            "img": "shopify://shop_images/Vector_3.svg",
             "titulo": "Ajuste inteligente"
+          }
+        },
+        "icono_yGNJW6": {
+          "type": "icono",
+          "settings": {
+            "img": "shopify://shop_images/Vector_1.svg",
+            "titulo": "Calidad premium"
+          }
+        },
+        "icono_9CHbzy": {
+          "type": "icono",
+          "settings": {
+            "img": "shopify://shop_images/Vector_2.svg",
+            "titulo": "Comfort y comodidad"
           }
         }
       },
       "block_order": [
-        "icono_nPWHmd"
+        "icono_nPWHmd",
+        "icono_yGNJW6",
+        "icono_9CHbzy"
       ],
       "name": "ele-compromiso",
       "settings": {
@@ -183,8 +200,8 @@
     "banner_slider_BhG9VH",
     "tabs_products_q7KcTV",
     "guia_talla_mY4nBk",
-    "tabs_products_Kcqyfy",
     "ele_competencia_giJtzE",
+    "tabs_products_Kcqyfy",
     "ele_compromiso_P3WgRV"
   ]
 }
