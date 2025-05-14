@@ -1,0 +1,94 @@
+
+<div class=" w-full   py-16 md:py-32 relative overflow-hidden px-6 md:px-0 bg-[#E2E7EC]">
+
+<div class="container mx-auto flex flex-col  gap-8 md:gap-16">
+
+<h2 class="text-3xl md:text-5xl  text-azul  ">{{ section.settings.titulo }}</h2>
+
+<div class="swiper w-full slider-reviews">
+    <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+            <div class="swiper-slide">
+
+            <div class="flex flex-col  gap-8  items-center justify-center py-16 px-6 bg-white rounded-2xl border border-[#596F85]">
+                 <img src="https://cdn.shopify.com/s/files/1/0618/8836/4797/files/Group_206.svg?v=1747206798" alt="">
+
+                 <div class="flex gap-4 ">
+                    <h3>{{block.settings.titulo}}</h3>
+                    <img src="https://cdn.shopify.com/s/files/1/0618/8836/4797/files/Vector_4.svg?v=1747206807" alt="">
+                 </div>
+
+                 <p class="text-center">{{block.settings.text}}</p>
+
+
+            </div>
+
+
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<a href="{{ section.settings.url }}" class="bg-[#0E3254] text-2xl text-white py-4 px-16 rounded-full hover:bg-[#0e3254f6] transition duration-300 ease-in-out self-center ">{{ section.settings.textUrl }}</a>
+
+</div>
+    
+
+
+</div>
+
+
+
+{% schema %}
+    {
+      "name": "reviews",
+      "class": "reviews",
+      "settings": [
+        {
+              "type": "text",
+              "id": "titulo",
+              "label": "Título",
+              "default": "REVIEWS"
+           
+            },{
+              "type": "url",
+              "id": "url",
+              "label": "Url"
+            },{
+              "type": "text",
+              "id": "textUrl",
+              "label": "textUrl",
+              "default": "VER MÁS REVIEWS"
+           
+            }
+        
+        ],"blocks": [
+      {
+        "type": "reviews",
+        "name": "reviews",
+        "settings": [
+        {
+              "type": "text",
+              "id": "titulo",
+              "label": "Título",
+              "default": "Francisco Javier"
+           
+            }, {
+              "type": "text",
+              "id": "text",
+              "label": "Review",
+              "default": "Excelente producto y logística! 100% lo recomiendo"
+           
+            }
+        ]
+      }
+    ],
+      "presets": [
+        {
+          "name": "reviews",
+          "category": "reviews"
+        }
+      ]
+    }
+{% endschema %}

@@ -317,6 +317,14 @@
  .font-detalles{
   font-family: detalles;
  } */
+
+ .text-azul{
+  color:#0E3254;
+ }
+ .bg-azul{
+  color:#0E3254;
+ }
+
  .text-blanco{
   color:#E7DED5;
  }
@@ -452,6 +460,29 @@ var swiper3 = new Swiper(".slider-product", {
 });
 
        var swiper4 = new Swiper(".slider-productos", {
+           slidesPerView: 1.4,
+           spaceBetween: 15,
+           pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+           },
+           breakpoints: {
+             640: {
+               slidesPerView: 2,
+               spaceBetween: 10,
+             },
+             768: {
+               slidesPerView: 3,
+               spaceBetween: 30,
+             },
+             1024: {
+               slidesPerView: 4,
+               spaceBetween: 20,
+             },
+           },
+         });
+
+         var swiper5 = new Swiper(".slider-reviews", {
            slidesPerView: 1.4,
            spaceBetween: 15,
            pagination: {
