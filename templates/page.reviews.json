@@ -11,13 +11,51 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1747263044b718b160": {
+      "type": "apps",
+      "blocks": {
+        "revie_reviews_por_whatsapp_app_block_4_TczRLn": {
+          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block-4/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+          "settings": {
+            "title": "{star} {count} Reviews",
+            "format": "1",
+            "image": "1",
+            "from": "1",
+            "onlinephotos": "1",
+            "title_color": "#000000",
+            "title_size": 24,
+            "title_pos": "flex-start",
+            "date": true,
+            "star_color": "#000000",
+            "size": 15,
+            "back_color": "#ffffff",
+            "text_color": "#121212",
+            "size_text": 14,
+            "max_reviews": 10,
+            "nextButtonText": "Mostrar más reseñas",
+            "productButtonText": "Ver producto",
+            "max_width": 1200,
+            "content_padding": 22,
+            "max_width_image": 24
+          }
+        }
+      },
+      "block_order": [
+        "revie_reviews_por_whatsapp_app_block_4_TczRLn"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1747263044b718b160"
   ]
 }
