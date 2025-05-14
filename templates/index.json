@@ -123,6 +123,31 @@
         "textUrl": "GUÍA DE TALLAS"
       }
     },
+    "tabs_products_Kcqyfy": {
+      "type": "tabs-products",
+      "blocks": {
+        "coleccion_extfK7": {
+          "type": "coleccion",
+          "settings": {
+            "text": "PANTALONES",
+            "collection": "pantalones"
+          }
+        }
+      },
+      "block_order": [
+        "coleccion_extfK7"
+      ],
+      "name": "tabs-product",
+      "settings": {
+        "titulo": "PANTALONES",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard"
+      }
+    },
     "ele_competencia_giJtzE": {
       "type": "ele-competencia",
       "name": "ele-competencia",
@@ -132,6 +157,14 @@
         "titulo": "VS. LA COMPETENCIA",
         "subtitulo": "Nuestros cortes están diseñados desde cero para ajustarse correctamente y brindar libertad de movimiento."
       }
+    },
+    "ele_compromiso_P3WgRV": {
+      "type": "ele-compromiso",
+      "name": "ele-compromiso",
+      "settings": {
+        "titulo": "NUESTRO COMPROMISO",
+        "subtitulo": "<p>Corte preciso, ajuste funcional y calidad garantizada. Ese es el estándar detrás de cada diseño elē.</p>"
+      }
     }
   },
   "order": [
@@ -139,6 +172,8 @@
     "banner_slider_BhG9VH",
     "tabs_products_q7KcTV",
     "guia_talla_mY4nBk",
-    "ele_competencia_giJtzE"
+    "tabs_products_Kcqyfy",
+    "ele_competencia_giJtzE",
+    "ele_compromiso_P3WgRV"
   ]
 }
