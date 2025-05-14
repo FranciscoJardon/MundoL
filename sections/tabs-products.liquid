@@ -28,7 +28,7 @@
   <h2 class="font-bold text-4xl md:text-5xl">       {{ section.settings.titulo }}</h2>
 
   {% if coleccion_blocks.size > 1 %}
-    <div class="grid grid-cols-5 gap-5 w-full max-w-[900px]">
+    <div class="grid grid-cols-4 gap-5 w-full max-w-[900px]">
       {% for block in coleccion_blocks %}
         <p class="text-center py-2 w-full rounded-full font-semibold cursor-pointer activate-section text-[#484848] bg-[#F3F1F1]"
            data-index="{{ forloop.index0 }}" data-section-id="{{ section.id }}">
