@@ -160,6 +160,17 @@
     },
     "ele_compromiso_P3WgRV": {
       "type": "ele-compromiso",
+      "blocks": {
+        "icono_nPWHmd": {
+          "type": "icono",
+          "settings": {
+            "titulo": "Ajuste inteligente"
+          }
+        }
+      },
+      "block_order": [
+        "icono_nPWHmd"
+      ],
       "name": "ele-compromiso",
       "settings": {
         "titulo": "NUESTRO COMPROMISO",
