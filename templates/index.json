@@ -193,6 +193,51 @@
         "titulo": "NUESTRO COMPROMISO",
         "subtitulo": "<p>Corte preciso, ajuste funcional y calidad garantizada. Ese es el estándar detrás de cada diseño elē.</p>"
       }
+    },
+    "reviews_nHqDHK": {
+      "type": "reviews",
+      "blocks": {
+        "reviews_f8XHmB": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Francisco Javier",
+            "text": "Excelente producto y logística! 100% lo recomiendo"
+          }
+        },
+        "reviews_HGfcGt": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Francisco Javier",
+            "text": "Excelente producto y logística! 100% lo recomiendo"
+          }
+        },
+        "reviews_FLRMkW": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Francisco Javier",
+            "text": "Excelente producto y logística! 100% lo recomiendo"
+          }
+        },
+        "reviews_tJY3Pn": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Francisco Javier",
+            "text": "Excelente producto y logística! 100% lo recomiendo"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_f8XHmB",
+        "reviews_HGfcGt",
+        "reviews_FLRMkW",
+        "reviews_tJY3Pn"
+      ],
+      "name": "reviews",
+      "settings": {
+        "titulo": "REVIEWS",
+        "url": "",
+        "textUrl": "VER MÁS REVIEWS"
+      }
     }
   },
   "order": [
@@ -202,6 +247,7 @@
     "guia_talla_mY4nBk",
     "ele_competencia_giJtzE",
     "tabs_products_Kcqyfy",
-    "ele_compromiso_P3WgRV"
+    "ele_compromiso_P3WgRV",
+    "reviews_nHqDHK"
   ]
 }
