@@ -97,6 +97,31 @@
         "padding_bottom": 12
       }
     },
+    "tabs_products_7Mtdde": {
+      "type": "tabs-products",
+      "blocks": {
+        "coleccion_jYgdnJ": {
+          "type": "coleccion",
+          "settings": {
+            "text": "PARA ÉL",
+            "collection": "best-seller"
+          }
+        }
+      },
+      "block_order": [
+        "coleccion_jYgdnJ"
+      ],
+      "name": "tabs-product",
+      "settings": {
+        "titulo": "Camisas",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard"
+      }
+    },
     "reviews_h6TF9J": {
       "type": "reviews",
       "blocks": {
@@ -166,6 +191,16 @@
         "textUrl": "VER MÁS REVIEWS"
       }
     },
+    "ele_competencia_6ynwcT": {
+      "type": "ele-competencia",
+      "name": "ele-competencia",
+      "settings": {
+        "img": "shopify://shop_images/Group_212_1.png",
+        "img2": "shopify://shop_images/Vector.svg",
+        "titulo": "VS. LA COMPETENCIA",
+        "subtitulo": "Nuestros cortes están diseñados desde cero para ajustarse correctamente y brindar libertad de movimiento."
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -188,7 +223,9 @@
   },
   "order": [
     "main",
+    "tabs_products_7Mtdde",
     "reviews_h6TF9J",
+    "ele_competencia_6ynwcT",
     "related-products"
   ]
 }
