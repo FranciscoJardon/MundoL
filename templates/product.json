@@ -12,6 +12,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "revie_reviews_por_whatsapp_app_block_zGFfJz": {
+          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+          "settings": {
+            "star_color": "#000000",
+            "star_text_2": "reseñas",
+            "size": 25,
+            "showcero": "2",
+            "format": "2"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {}
@@ -57,6 +67,7 @@
         }
       },
       "block_order": [
+        "revie_reviews_por_whatsapp_app_block_zGFfJz",
         "title",
         "price",
         "variant_picker",
