@@ -20,10 +20,18 @@
             "heading": "AYUDA",
             "menu": "footer"
           }
+        },
+        "text_yPW3tB": {
+          "type": "text",
+          "settings": {
+            "heading": "CONTACTO",
+            "subtext": "<p>WhatsApp : +52 (33) 25 90 66 50</p><p>Oficinas: 33 2003 8819</p>"
+          }
         }
       },
       "block_order": [
-        "link_list_CLJewg"
+        "link_list_CLJewg",
+        "text_yPW3tB"
       ],
       "settings": {
         "color_scheme": "scheme-5",
