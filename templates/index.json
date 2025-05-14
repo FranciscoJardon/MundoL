@@ -229,29 +229,50 @@
         "reviews_f8XHmB": {
           "type": "reviews",
           "settings": {
-            "titulo": "Francisco Javier",
-            "text": "Excelente producto y logística! 100% lo recomiendo"
+            "titulo": "Héctor",
+            "text": "Me gustó el producto solo que no fue de mi talla deseo saber el proceso de devolución para pedir una talla más grande"
           }
         },
         "reviews_HGfcGt": {
           "type": "reviews",
           "settings": {
-            "titulo": "Francisco Javier",
+            "titulo": "Erick",
             "text": "Excelente producto y logística! 100% lo recomiendo"
           }
         },
         "reviews_FLRMkW": {
           "type": "reviews",
           "settings": {
-            "titulo": "Francisco Javier",
-            "text": "Excelente producto y logística! 100% lo recomiendo"
+            "titulo": "Williams Martinez",
+            "text": "Excelente producto 100% recomendable ocupo realizar otra compra."
           }
         },
         "reviews_tJY3Pn": {
           "type": "reviews",
           "settings": {
-            "titulo": "Francisco Javier",
-            "text": "Excelente producto y logística! 100% lo recomiendo"
+            "titulo": "Eric Gerardo ",
+            "text": "Excelentes camisas. Llegaron en tiempo. Buena calidad"
+          }
+        },
+        "reviews_LbVQRM": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "JULIAN ADAN",
+            "text": "100% recomendado y volvería a comprar"
+          }
+        },
+        "reviews_FjtTAD": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Juan Martin",
+            "text": "Excelente muy recomendable 🙂👌"
+          }
+        },
+        "reviews_ckTWkq": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Jaqueline Lopez",
+            "text": "Recomiendo esta pieza pues es de acuerdo a mi talla y buen materiales"
           }
         }
       },
@@ -259,7 +280,10 @@
         "reviews_f8XHmB",
         "reviews_HGfcGt",
         "reviews_FLRMkW",
-        "reviews_tJY3Pn"
+        "reviews_tJY3Pn",
+        "reviews_LbVQRM",
+        "reviews_FjtTAD",
+        "reviews_ckTWkq"
       ],
       "name": "reviews",
       "settings": {
