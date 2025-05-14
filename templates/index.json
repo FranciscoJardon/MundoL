@@ -122,12 +122,23 @@
         "url": "",
         "textUrl": "GUÍA DE TALLAS"
       }
+    },
+    "ele_competencia_giJtzE": {
+      "type": "ele-competencia",
+      "name": "ele-competencia",
+      "settings": {
+        "img": "shopify://shop_images/Captura_de_pantalla_2025-05-06_a_la_s_4.48.16_p.m._1.png",
+        "img2": "shopify://shop_images/Vector.svg",
+        "titulo": "VS. LA COMPETENCIA",
+        "subtitulo": "Nuestros cortes están diseñados desde cero para ajustarse correctamente y brindar libertad de movimiento."
+      }
     }
   },
   "order": [
     "banner_slider_kKmhUa",
     "banner_slider_BhG9VH",
     "tabs_products_q7KcTV",
-    "guia_talla_mY4nBk"
+    "guia_talla_mY4nBk",
+    "ele_competencia_giJtzE"
   ]
 }
