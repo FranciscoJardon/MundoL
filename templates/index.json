@@ -114,6 +114,26 @@
     },
     "diseno_comodidad_Cw4zeB": {
       "type": "diseno-comodidad",
+      "blocks": {
+        "slide_DVNLF9": {
+          "type": "slide",
+          "settings": {
+            "img": "shopify://shop_images/Group_208.png",
+            "img2": "shopify://shop_images/Group_211.png"
+          }
+        },
+        "slide_h7rc3k": {
+          "type": "slide",
+          "settings": {
+            "img": "shopify://shop_images/Group_212.png",
+            "img2": "shopify://shop_images/Group_213.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_DVNLF9",
+        "slide_h7rc3k"
+      ],
       "name": "diseno-comodidad",
       "settings": {
         "titulo": "DISEÑO + COMODIDAD",
