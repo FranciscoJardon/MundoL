@@ -111,11 +111,23 @@
         "show_rating": false,
         "quick_add": "standard"
       }
+    },
+    "guia_talla_mY4nBk": {
+      "type": "guia-talla",
+      "name": "guia-talla",
+      "settings": {
+        "img": "shopify://shop_images/Rectangle_35.png",
+        "titulo": "¿No estás seguro de tu talla?",
+        "subtitulo": "Consulta nuestra guía y encuentra el ajuste perfecto para ti.",
+        "url": "",
+        "textUrl": "GUÍA DE TALLAS"
+      }
     }
   },
   "order": [
     "banner_slider_kKmhUa",
     "banner_slider_BhG9VH",
-    "tabs_products_q7KcTV"
+    "tabs_products_q7KcTV",
+    "guia_talla_mY4nBk"
   ]
 }
