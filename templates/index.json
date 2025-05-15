@@ -148,7 +148,7 @@
         "img": "shopify://shop_images/Rectangle_35.png",
         "titulo": "¿No estás seguro de tu talla?",
         "subtitulo": "Consulta nuestra guía y encuentra el ajuste perfecto para ti.",
-        "url": "",
+        "url": "shopify://pages/guia-de-tallas",
         "textUrl": "GUÍA DE TALLAS"
       }
     },
