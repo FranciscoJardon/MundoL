@@ -41,6 +41,10 @@
             "swatch_shape": "circle"
           }
         },
+        "guia_AhdnNh": {
+          "type": "guia",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -76,12 +80,14 @@
         "price",
         "oferta_AHTi6P",
         "variant_picker",
+        "guia_AhdnNh",
         "buy_buttons",
         "payments_jaM66E",
         "delivery_estimated_3TeDJa",
         "tab_G9HARF"
       ],
       "settings": {
+        "image": "shopify://shop_images/WhatsApp_Image_2025-05-14_at_16.55.45_e4626c3d.jpg",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "small",
