@@ -17,6 +17,25 @@
         "padding_bottom": 28
       }
     },
+    "image_with_text_J7JVKL": {
+      "type": "image-with-text",
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/TALLAS-ELE-2024_4bb9f44c-3d6b-474a-8a48-f9a802099f64.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_g3nrCf": {
       "type": "image-with-text",
       "name": "t:sections.image-with-text.presets.name",
@@ -39,6 +58,7 @@
   },
   "order": [
     "main",
+    "image_with_text_J7JVKL",
     "image_with_text_g3nrCf"
   ]
 }
