@@ -25,7 +25,7 @@
 {% assign coleccion_blocks = section.blocks | where: "type", "coleccion" %}
 
 <div class="w-full py-16 md:py-32 px-6 flex flex-col gap-10 container mx-auto" data-section-id="{{ section.id }}">
-  <h2 class="font-bold text-4xl md:text-5xl">       {{ section.settings.titulo }}</h2>
+  <h2 class="text-azul text-4xl md:text-5xl">       {{ section.settings.titulo }}</h2>
 
   {% if coleccion_blocks.size > 1 %}
     <div class="grid grid-cols-4 gap-2 w-full max-w-[900px]">
