@@ -1,0 +1,270 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "revie_reviews_por_whatsapp_app_block_zGFfJz": {
+          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+          "settings": {
+            "star_color": "#000000",
+            "star_text_2": "reseñas",
+            "size": 25,
+            "showcero": "2",
+            "format": "2"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "oferta_AHTi6P": {
+          "type": "oferta",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "payments_jaM66E": {
+          "type": "payments",
+          "settings": {
+            "text-payments": "Metodos de pago"
+          }
+        },
+        "delivery_estimated_3TeDJa": {
+          "type": "delivery-estimated",
+          "settings": {}
+        },
+        "tab_G9HARF": {
+          "type": "tab",
+          "settings": {
+            "tab-1": "Descripción",
+            "tab-2": "Fit",
+            "tab-3": "Cuidados",
+            "tab-1-content": "{{ product.description }}",
+            "tab-2-content": "<p>**FAVOR DE REVISAR LA GUIA DE TALLAS**</p><ul><li><br/>NUESTRAS CAMISAS VIENEN UN POCO REDUCIDA, RECOMENDAMOS UNA TALLA MAS A LA QUE NORMALMENTE USAN.<br/></li></ul>",
+            "tab-3-content": ""
+          }
+        }
+      },
+      "block_order": [
+        "revie_reviews_por_whatsapp_app_block_zGFfJz",
+        "title",
+        "price",
+        "oferta_AHTi6P",
+        "variant_picker",
+        "buy_buttons",
+        "payments_jaM66E",
+        "delivery_estimated_3TeDJa",
+        "tab_G9HARF"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "columns",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "para_ti_bhQF4D": {
+      "type": "para-ti",
+      "blocks": {
+        "beneficio_TGRRUm": {
+          "type": "Beneficio",
+          "settings": {
+            "img": "shopify://shop_images/image.png",
+            "titulo": "Tela fresca para el uso diario",
+            "texto": "Nuestras telas ligeras están pensadas para el uso diario: suaves al tacto y resistentes al desgaste."
+          }
+        },
+        "beneficio_3LAkhE": {
+          "type": "Beneficio",
+          "settings": {
+            "img": "shopify://shop_images/image_2.png",
+            "titulo": "Estilo",
+            "texto": "En Ele creemos que el estilo no tiene talla. Diseñamos ropa para hombres que buscan verse bien, sentirse cómodos y vestir con seguridad."
+          }
+        },
+        "beneficio_LJKwXU": {
+          "type": "Beneficio",
+          "settings": {
+            "img": "shopify://shop_images/image_1.png",
+            "titulo": "Comodidad",
+            "texto": "Creamos un molde desde cero para así brindar los puntos necesarios para hacer una camisa cómoda, claro, sin perder el diseño y estilo."
+          }
+        }
+      },
+      "block_order": [
+        "beneficio_TGRRUm",
+        "beneficio_3LAkhE",
+        "beneficio_LJKwXU"
+      ],
+      "name": "para-ti",
+      "settings": {
+        "titulo": "DISEÑO + COMODIDAD"
+      }
+    },
+    "tabs_products_7Mtdde": {
+      "type": "tabs-products",
+      "blocks": {
+        "coleccion_jYgdnJ": {
+          "type": "coleccion",
+          "settings": {
+            "text": "TAMBIÉN TE PUEDE GUSTAR:",
+            "collection": "best-seller"
+          }
+        }
+      },
+      "block_order": [
+        "coleccion_jYgdnJ"
+      ],
+      "name": "tabs-product",
+      "settings": {
+        "titulo": "Camisas",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard"
+      }
+    },
+    "reviews_h6TF9J": {
+      "type": "reviews",
+      "blocks": {
+        "reviews_XnpP48": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Héctor",
+            "text": "Me gustó el producto solo que no fue de mi talla deseo saber el proceso de devolución para pedir una talla más grande"
+          }
+        },
+        "reviews_findQM": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Jaqueline Lopez",
+            "text": "Recomiendo esta pieza pues es de acuerdo a mi talla y buen materiales"
+          }
+        },
+        "reviews_xRempq": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Erick",
+            "text": "Excelente producto y logística! 100% lo recomiendo"
+          }
+        },
+        "reviews_D8pi4r": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Williams Martinez",
+            "text": "Excelente producto 100% recomendable ocupo realizar otra compra."
+          }
+        },
+        "reviews_FhYNXB": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Eric Gerardo ",
+            "text": "Excelentes camisas. Llegaron en tiempo. Buena calidad"
+          }
+        },
+        "reviews_4TepfC": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "JULIAN ADAN",
+            "text": "100% recomendado y volvería a comprar"
+          }
+        },
+        "reviews_wdxVEA": {
+          "type": "reviews",
+          "settings": {
+            "titulo": "Juan Martin",
+            "text": "Excelente muy recomendable 🙂👌"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_XnpP48",
+        "reviews_findQM",
+        "reviews_xRempq",
+        "reviews_D8pi4r",
+        "reviews_FhYNXB",
+        "reviews_4TepfC",
+        "reviews_wdxVEA"
+      ],
+      "name": "reviews",
+      "settings": {
+        "titulo": "REVIEWS",
+        "url": "shopify://pages/reviews",
+        "textUrl": "VER MÁS REVIEWS"
+      }
+    },
+    "ele_competencia_6ynwcT": {
+      "type": "ele-competencia",
+      "name": "ele-competencia",
+      "settings": {
+        "img": "shopify://shop_images/Group_212_1.png",
+        "img2": "shopify://shop_images/Vector.svg",
+        "titulo": "VS. LA COMPETENCIA",
+        "subtitulo": "Nuestros cortes están diseñados desde cero para ajustarse correctamente y brindar libertad de movimiento."
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "para_ti_bhQF4D",
+    "tabs_products_7Mtdde",
+    "reviews_h6TF9J",
+    "ele_competencia_6ynwcT",
+    "related-products"
+  ]
+}
