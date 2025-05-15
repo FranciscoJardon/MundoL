@@ -97,6 +97,35 @@
         "padding_bottom": 12
       }
     },
+    "para_ti_bhQF4D": {
+      "type": "para-ti",
+      "blocks": {
+        "beneficio_TGRRUm": {
+          "type": "Beneficio",
+          "settings": {
+            "img": "shopify://shop_images/image.png",
+            "titulo": "Tela fresca para el uso diario",
+            "texto": "Nuestras telas ligeras están pensadas para el uso diario: suaves al tacto y resistentes al desgaste."
+          }
+        },
+        "beneficio_3LAkhE": {
+          "type": "Beneficio",
+          "settings": {
+            "img": "shopify://shop_images/image_2.png",
+            "titulo": "Estilo",
+            "texto": "En Ele creemos que el estilo no tiene talla. Diseñamos ropa para hombres que buscan verse bien, sentirse cómodos y vestir con seguridad."
+          }
+        }
+      },
+      "block_order": [
+        "beneficio_TGRRUm",
+        "beneficio_3LAkhE"
+      ],
+      "name": "para-ti",
+      "settings": {
+        "titulo": "DISEÑO + COMODIDAD"
+      }
+    },
     "tabs_products_7Mtdde": {
       "type": "tabs-products",
       "blocks": {
@@ -223,6 +252,7 @@
   },
   "order": [
     "main",
+    "para_ti_bhQF4D",
     "tabs_products_7Mtdde",
     "reviews_h6TF9J",
     "ele_competencia_6ynwcT",
