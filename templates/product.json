@@ -115,11 +115,20 @@
             "titulo": "Estilo",
             "texto": "En Ele creemos que el estilo no tiene talla. Diseñamos ropa para hombres que buscan verse bien, sentirse cómodos y vestir con seguridad."
           }
+        },
+        "beneficio_LJKwXU": {
+          "type": "Beneficio",
+          "settings": {
+            "img": "shopify://shop_images/image_1.png",
+            "titulo": "Comodidad",
+            "texto": "Creamos un molde desde cero para así brindar los puntos necesarios para hacer una camisa cómoda, claro, sin perder el diseño y estilo."
+          }
         }
       },
       "block_order": [
         "beneficio_TGRRUm",
-        "beneficio_3LAkhE"
+        "beneficio_3LAkhE",
+        "beneficio_LJKwXU"
       ],
       "name": "para-ti",
       "settings": {
