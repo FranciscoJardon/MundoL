@@ -41,6 +41,10 @@
             "swatch_shape": "circle"
           }
         },
+        "guia_9bPkeQ": {
+          "type": "guia",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -76,12 +80,14 @@
         "price",
         "oferta_AHTi6P",
         "variant_picker",
+        "guia_9bPkeQ",
         "buy_buttons",
         "payments_jaM66E",
         "delivery_estimated_3TeDJa",
         "tab_G9HARF"
       ],
       "settings": {
+        "image": "shopify://shop_images/Tallas-Pantalon-Gabardina-ele_3211b257-8034-41c2-97ba-e1811a6ebded.webp",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "small",
