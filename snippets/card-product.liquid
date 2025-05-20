@@ -140,7 +140,8 @@
                 {{- 'products.product.on_sale' | t -}}
               </span>
             {%- endif -%}
-{% if collection and collection.handle == 'hotdays20' %}
+{% assign hotdays_collection = collections['hotdays20'] %}
+{% if hotdays_collection.products contains product %}
   <img class="img" src="https://cdn.shopify.com/s/files/1/0618/8836/4797/files/20_OFF.png?v=1747723904">
 {% endif %}
 
