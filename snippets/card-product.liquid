@@ -141,7 +141,11 @@
               </span>
             {%- endif -%}
 
+ {%- for collection in card_product.collections -%}
+  {%- if collection.handle == 'hotdays20' -%}
     <img class="img" src="https://cdn.shopify.com/s/files/1/0618/8836/4797/files/20_OFF.png?v=1747723904">
+  {%- endif -%}
+{%- endfor -%}
 
   <style>
   .img{
