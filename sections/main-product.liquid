@@ -703,26 +703,21 @@
                 {% render 'icon-with-text', block: block %}
            
               {% when 'delivery-estimated' %}
-                {% if product.available %}
-                  <div
-                    id="delivery-date-estimator"
-                    class="flex items-center gap-4  py-4 px-6 bg-[#F0F0F0] "
-                  >
-                  <img src="https://cdn.shopify.com/s/files/1/0618/8836/4797/files/Vector_6.svg?v=1747252461" class="w-[20px]">
-                    <span class="icon--pulsing"></span>
-                    <p class="font-medium text-[16px]">
-                      Tu pedido llegaría entre <span class="font-black text-black" id="earliest-day"> </span> y
-                      <span class="font-black text-black" id="latest-day"> </span>
-                    </p>
-                  </div>
-                {% endif %}
 
-                <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script>
+                  {% if product.available %}
+                    <div id="delivery-date-estimator" class="text-center rounded-full p-4 bg-[#FFF1D4] border-2 border-[#E2C890]">
+                      <span class="icon--pulsing"></span>
+                      <p class="font-medium text-[16px]"> ENVÍO EXPRESS</p>
+                    </div>
+                  {% endif %}
 
-                <script>
-                  document.getElementById('earliest-day').innerHTML = dayjs().add(3, 'days').format('MMM D');
-                  document.getElementById('latest-day').innerHTML = dayjs().add(6, 'days').format('MMM D');
-                </script>
+                       
+                  <!-- <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script>
+
+                      <script>
+                        document.getElementById("earliest-day").innerHTML = dayjs().add(3, 'days').format("MMM D");
+                        document.getElementById("latest-day").innerHTML = dayjs().add(6, 'days').format("MMM D");
+                      </script> -->
 
         {% when 'guia' %}
 
