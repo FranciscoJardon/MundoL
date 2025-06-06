@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "20% DE DESCUENTO EN TODA LA TIENDA",
-            "link": "shopify://collections/hotdays20"
+            "text": "ENVÍO GRATIS EN COMPRA +$899",
+            "link": ""
           }
         }
       },
