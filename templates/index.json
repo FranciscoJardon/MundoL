@@ -24,13 +24,14 @@
         "slide_YJQiBN": {
           "type": "slide",
           "settings": {
-            "img": "shopify://shop_images/Frame_494_2.png",
-            "img2": "shopify://shop_images/Frame_495.png",
+            "img": "shopify://shop_images/DESK_2_1.png",
+            "img2": "shopify://shop_images/MOVIL_1_1.png",
             "url": "shopify://collections/all"
           }
         },
         "slide_DPw6QL": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "img": "shopify://shop_images/Frame_494_3.png",
             "img2": "shopify://shop_images/Frame_2.png",
