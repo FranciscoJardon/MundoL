@@ -550,7 +550,8 @@
     "checkout": {
       "contact": {
         "address2_label": "Colonia y refencias.",
-        "optional_address2_label": "Colonia y refencias."
+        "optional_address2_label": "Colonia y refencias.",
+        "address1_label": "Dirección Completa: Calle y Número."
       }
     }
   }
