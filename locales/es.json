@@ -549,8 +549,8 @@
   "shopify": {
     "checkout": {
       "contact": {
-        "address2_label": "Colonia y refencias.",
-        "optional_address2_label": "Colonia y refencias.",
+        "address2_label": "Colonia y referencia.",
+        "optional_address2_label": "Colonia y referencia.",
         "address1_label": "Dirección Completa: Calle y Número."
       }
     }
