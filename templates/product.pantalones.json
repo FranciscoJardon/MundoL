@@ -16,6 +16,7 @@
           "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
           "settings": {
             "star_color": "#000000",
+            "text_color": "#292929",
             "star_text_2": "reseñas",
             "size": 25,
             "showcero": "2",
@@ -88,7 +89,7 @@
         "tab_G9HARF"
       ],
       "settings": {
-        "image": "shopify://shop_images/Tallas-Pantalon-Gabardina-ele_3211b257-8034-41c2-97ba-e1811a6ebded.webp",
+        "image": "shopify://shop_images/Talla_ele_Pantalon.png",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "small",
